@@ -4,11 +4,12 @@ Docker container for seamless integration of remote services, short name: `drsp`
 
 ## Usage
 
-Starting a container that will serve `http://example.org` on port 7500
+###### Starting a container that will serve `http://example.org` on port 7500
 
 `docker run --name=proxy -d -p 7500:7500 akosratku/drsp 7500=http://example.org`
 
-Starting a container that will serve localhost:8080 on port 8080 and `http://example.org` on port 7500
+
+###### Starting a container that will serve localhost:8080 on port 8080 and `http://example.org` on port 7500
 
 Note: `--add-host=` below adds the current ip of en0 as localhost to the proxy container. This snippet is OSX specific if you are on any other OS change `$(ipconfig getifaddr en0)` to obtain the ip address.
 
